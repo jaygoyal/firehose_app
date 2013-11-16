@@ -1,0 +1,25 @@
+<h2>
+Here is your status:
+</h2>
+
+<br/>
+
+<% @pics.each do  |pic| %>
+<div class="span4 offset0 boxy text-center">
+	
+	<h1 class="h1-custom">
+		Lesson: <%= pic.lesson %>
+	</h1>
+		<br/>
+	<h2>
+		Emotion: <%= pic.emotion %>
+	
+		<br/>
+	
+		Learned: <%= pic.learned %>
+		<br/>
+	</h2>
+</div>
+
+<% end %>
+
