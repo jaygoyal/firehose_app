@@ -1,3 +1,7 @@
+
+<!-- This creates the navigation bar at the top of each page -->
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,19 +24,20 @@
       </a>
  
       <!-- Be sure to leave the brand out there if you want it shown -->
-      <a class="brand" href="#">Cutting edge training app</a>
- 
+ 		    
+ 		    <%= link_to 'Cutting Edge Training App', root_path, :class => 'brand' %>
+
       <!-- Everything you want hidden at 940px or less, place within here -->
       <div class="nav-collapse collapse">
         <!-- .nav, .navbar-search, .navbar-form, etc -->
           <ul class="nav">
 
           	<li>
-          		<%= link_to 'Cutting Edge App', '#' %>
+          		<%= link_to 'Cutting Edge App 1', pics_path %>
           	</li>
 
           	<li>
-          		<%= link_to 'Cutting Edge App 2', '#' %>
+          		<%= link_to 'Cutting Edge App 2', new_pic_path %>
           	</li>
 
           </ul>			

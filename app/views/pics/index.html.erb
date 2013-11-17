@@ -1,3 +1,5 @@
+<!-- Views -->
+
 <h2>
 Here is your status:
 </h2>
@@ -6,11 +8,12 @@ Here is your status:
 
 <% @pics.each do  |pic| %>
 <div class="span2 offset0 boxy text-center">
-	
-	<h1 class="h1-custom">
+
+<h1 class="h1-custom">
+
 		Lesson: <%= pic.lesson %>
 	</h1>
-		<br/>
+		Image: <%= image_tag pic.image %>
 	<h2>
 		Emotion: <%= pic.emotion %>
 	

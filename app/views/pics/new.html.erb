@@ -1,4 +1,5 @@
- 
+ <!-- This is our "second" page. It creates a box for people to enter information into.
+ This is a "Views" -->
 <h2>
 <%= simple_form_for @pic do |f| %>
   <div class="span6 offset4 boxy text-center">
@@ -8,8 +9,15 @@
 		<br>
 		<br>
   <%= f.input :lesson, label: 'What lesson are you on?', :placeholder => '1, 2, etc.,' %>
+  <%= f.input :image, label: 'Please upload your picture' %>
+
+  <br>
+
   <%= f.input :emotion, label: 'How are you feeling?', :placeholder => 'Happy, Super, Winning, etc.' %>
   <%= f.input :learned, label: 'What have you learned?', :placeholder => 'HTML 5, CSS3, GitHub, Rails' %>
+
+
+
   
   		<br>
   		<br>
